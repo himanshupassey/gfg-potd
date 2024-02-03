@@ -1,6 +1,6 @@
-## Date- 01-Feb-2024😊
+## Date: 01-Feb-2024😊
 
-## POTD- Panagram Checking : [Problem Link](https://www.geeksforgeeks.org/problems/pangram-checking-1587115620/1)
+## POTD: Panagram Checking - [Problem Link](https://www.geeksforgeeks.org/problems/pangram-checking-1587115620/1)
 
 ## Easy          Accuracy: 61.34%        Submissions: 58K+               Points: 2
 
