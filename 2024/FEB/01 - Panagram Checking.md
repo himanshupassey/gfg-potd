@@ -1,4 +1,4 @@
-### Date- 01-Feb-2024😊
+## Date- 01-Feb-2024😊
 
 ## POTD- Panagram Checking (https://www.geeksforgeeks.org/problems/pangram-checking-1587115620/1)
 
@@ -50,6 +50,6 @@ Both Uppercase & Lowercase are considerable
 
 ### Contribution and Support:
 
-Follow and aim for collaborative learning environment.
+Follow and aim for a collaborative learning environment, please visit our [discussion section](https://github.com/himanshupassey/gfg-potd/discussions)
 
-If you find this solution helpful, consider supporting us by giving a ⭐ star to the himanshupassey/gfg-potd repository.
+If you find this solution beneficial, please show your support by giving a '⭐ star' to the [getlost01/gfg-potd](https://github.com/himanshupassey/gfg-potd) repository.
