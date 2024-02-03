@@ -41,4 +41,4 @@ class Solution
 
 Follow and aim for a collaborative learning environment, please visit our [discussion section](https://github.com/himanshupassey/gfg-potd/discussions)
 
-If you find this solution beneficial, please show your support by giving a '⭐ star' to the [getlost01/gfg-potd](https://github.com/himanshupassey/gfg-potd) repository.
+If you find this solution beneficial, please show your support by giving a '⭐ star' to the [himanshupassey/gfg-potd](https://github.com/himanshupassey/gfg-potd) repository.
