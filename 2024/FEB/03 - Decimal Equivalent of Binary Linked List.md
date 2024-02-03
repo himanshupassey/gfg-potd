@@ -1,4 +1,4 @@
-## Date: 02-Feb-2024😊
+## Date: 03-Feb-2024😊
 
 ## POTD: Decimal Equivalent of Binary Linked List - [Problem Link](https://www.geeksforgeeks.org/problems/implement-atoi/1)
 
