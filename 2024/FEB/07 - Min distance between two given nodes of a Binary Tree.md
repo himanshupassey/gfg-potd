@@ -1,6 +1,6 @@
 ## Date: 07-Feb-2024😊
 
-## POTD: Min distance between two given nodes of a Binary Tree - [Problem Link]([https://www.geeksforgeeks.org/problems/sorted-insert-for-circular-linked-list/1]
+## POTD: Min distance between two given nodes of a Binary Tree - [Problem Link]([https://www.geeksforgeeks.org/problems/min-distance-between-two-given-nodes-of-a-binary-tree/1]
 
 ## Medium Accuracy: 39.13% Submissions: 94K+ Points: 4
 
@@ -28,31 +28,40 @@ Expected Auxiliary Space: O(Height of the Tree).
  
 class Solution {
 public:
-    int cnt;
-    
-    void dfs(Node* node, int& k, int lvl, unordered_map<int, bool>& mp) {
-        if (!node)
-            return;
-        
-        mp[lvl] = false;
-        
-        if (!node->left && !node->right) {
-            if (lvl - k >= 0 && !mp[lvl - k]) {
-                mp[lvl - k] = true;
-                cnt++;
-            }
+    int ans = 0;
+
+    int solve(Node* root, int a, int b) {
+        if (root == NULL || ans > 0) 
+            return 0;
+
+        int l = solve(root->left, a, b);
+        int r = solve(root->right, a, b);
+
+        if ((root->data == a || root->data == b)) {
+            if (l != 0) 
+                ans = l;
+            else if (r != 0) 
+                ans = r;
+            else 
+                return 1;
         }
+
+        if (l != 0 && r != 0) 
+            ans = l + r;
+        else if (l != 0) 
+            return l + 1;
+        else if (r != 0) 
+            return r + 1;
         
-        ++lvl;
-        dfs(node->left, k, lvl, mp);
-        dfs(node->right, k, lvl, mp);
+        return 0;
     }
-    
-    int printKDistantfromLeaf(Node* root, int k) {
-        cnt = 0;
-        unordered_map<int, bool> mp;
-        dfs(root, k, 0, mp);
-        return cnt;
+
+    int findDist(Node* root, int a, int b) {
+        if (a == b) 
+            return 0;
+        
+        solve(root, a, b);
+        return ans;
     }
 };
 
